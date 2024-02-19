@@ -2,37 +2,92 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ticket Lelo</title>
-    <!-- daisy ui  -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- tailwind  -->
-    <script src="tailwind.config.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticketing-X</title>
+  <!-- daisy ui  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- tailwind  -->
+  <script src="tailwind.config.js"></script>
 </head>
 
-<body>
-    <header>
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-              
-              <a class="btn btn-ghost text-xl">Ticketing-X</a>
-            </div>
-            <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Destination</a></li>
-                <li><a>Search</a></li>
-              </ul>
-            </div>
-            <div class="navbar-end">
-              <a class="btn">Bus</a>
-              <img src="/images//bus-icon.png" alt="">
-            </div>
-          </div>
-    </header>
+<body class="ml-8 mr-8 text-center">
+  <header>
+    <!-- navbar  -->
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+
+        <a class="btn btn-ghost text-xl">Ticketing-X</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Destination</a></li>
+          <li><a>Search</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn">Bus
+          <img src="/images//bus-icon.png" alt="">
+        </a>
+      </div>
+    </div>
+    <!-- Ticketing-X  -->
+    <div
+      class="justify-center items-center text-center  bg-[url(images/banner.png)] bg-no-repeat max-w-full max-h-full">
+
+      <div class="space-y-10">
+        <h1 class=" text-6xl text-white font-bold">End-to-End Travel with <br>
+          <span class="text-green-500">Ticketing-X</span>
+        </h1>
+        <p class="text-white">Yes, you can run unit tests and view the results directly within the app. The integrated
+          testing features allow for a streamlined .</p>
+        <button class="btn bg-green-500 text-black border-none">Buy Tickets</button>
+      </div>
+
+      
+    </div>
+
+    <!-- cards  -->
+    <div class="flex gap-8 mt-10 justify-center">
+      <div class="flex bg-white rounded-lg p-3">
+        <div>
+          <img src="images/people.png" alt="">
+        </div>
+        <div>
+          <h1 class="text-4xl text-black">500+</h1>
+          <p>Registered users</p>
+        </div>
+      </div>
+
+      <div class="flex bg-white rounded-lg p-3">
+        <div>
+          <img src="images/ticket-cupon.png" alt="">
+        </div>
+        <div>
+          <h1 class="text-4xl text-black">1.5 lacs</h1>
+          <p>Tickets sold</p>
+        </div>
+      </div>
+
+      <div class="flex bg-white rounded-lg p-3">
+        <div>
+          <img src="images/stoppage.png" alt="">
+        </div>
+        <div>
+          <h1 class="text-4xl text-black">1.5 lacs</h1>
+          <p>Rental Partners</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Best offers for you  -->
+    <h1 class="text-2xl text-center mt-10">Best offers for you</h1>
+  </main>
 </body>
 
 </html>
