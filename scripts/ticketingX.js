@@ -44,6 +44,8 @@ for (let i = 0; i < cards.length; i++) {
 
         const TicketTag = parseFloat(document.getElementById("ticket-price").innerText.split(" ")[0]);
 
+        const myDiv = document.getElementById('myDiv');
+
         const p = document.createElement("p");
         p.innerText = title;
 
@@ -53,9 +55,17 @@ for (let i = 0; i < cards.length; i++) {
         const p3 = document.createElement("p");
         p3.innerText = TicketTag;
 
+
+        const lineBreak = document.createElement('br');
+
+
+
         titleContainer.appendChild(p);
         titleContainer.appendChild(p2);
         titleContainer.appendChild(p3);
+        myDiv.appendChild(lineBreak);
+
+
 
         const countLeft = document.getElementById("negative").innerText;
 
@@ -65,6 +75,15 @@ for (let i = 0; i < cards.length; i++) {
             return;
         }
         document.getElementById("negative").innerText = convertNumber - 1;
+
+        const seatBtnselected = document.querySelectorAll('.card');
+        const selectedText = document.getElementById('section-id');
+
+        seatBtnselected.forEach(function (buttonSel) {
+            buttonSel.addEventListener('click', function () {
+                selectedText.classList.add('bg-green-500', 'text-white');
+            });
+        });
 
 
 
@@ -160,88 +179,6 @@ document.addEventListener('DOMContentLoaded', function () {
         selectedText.classList.add('bg-green-500', 'text-white');
     });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
