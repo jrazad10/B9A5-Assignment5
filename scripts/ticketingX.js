@@ -14,16 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
 function setInnerText(id, value) {
     document.getElementById(id).innerText = value;
 }
-/*---------------------------------------------------------------*/
 
 
 
-
-
-
-
-
-/*-----------------------------------------------------*/
 const cards = document.querySelectorAll(".card");
 
 let count = 0;
@@ -116,7 +109,7 @@ btn.addEventListener("click", function () {
     const couponElement = document.getElementById("input-field").value;
     const couponCode = couponElement.split(" ").join("").toUpperCase();
     if (totalPrice >= 2200) {
-        if (couponCode === "NEW15" || couponCode === "Couple20") {
+        if (couponCode === "NEW15" || couponCode === "Couple 20") {
 
             document.getElementById("apply-div").classList.add("hidden");
             btn.classList.add("hidden");
